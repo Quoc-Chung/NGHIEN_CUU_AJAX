@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<Trandau> 
+@foreach (var item in Model){
+<div class="col-lg-3 col-md-6">
+	<div class="single-product">
+		<img class="img-fluid" src="@Url.Content("../BONGDA/"+ item.Anh +".jpg")" alt="">
+		<div class="product-details">
+			<h6>
+				@item.TranDauId
+			</h6>
+			<div class="price">
+				<h6>$150.00</h6>
+				<h6 class="l-through">@item.NgayThiDau</h6>
+			</div>
+			<div class="prd-bottom">
+
+				<a href="" class="social-info">
+					<span class="ti-bag"></span>
+					<p class="hover-text">@item.KetQua</p>
+				</a>
+				<a href="" class="social-info">
+					<span class="lnr lnr-heart"></span>
+					<p class="hover-text">@item.Vong</p>
+				</a>
+				<a href="" class="social-info">
+					<span class="lnr lnr-sync"></span>
+					<p class="hover-text">@item.HiepPhu</p>
+				</a>
+				<a href="" class="social-info">
+					<span class="lnr lnr-move"></span>
+					<p class="hover-text">@item.TrangThai</p>
+				</a>
+			</div>
+				<a asp-controller="Home" asp-action="ThemTranDauMoi" class="place__btn bg__color--berlin">THÊM</a>
+				<a asp-controller="Home" asp-action="XoaTranDau" asp-route-trandauID="@item.TranDauId" class="place__btn bg__color--berlin">XÓA</a>
+		</div>
+	</div>
+</div>
+}

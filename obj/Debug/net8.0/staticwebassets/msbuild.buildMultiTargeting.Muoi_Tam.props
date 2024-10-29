@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Muoi_Tam.props" />
+</Project>

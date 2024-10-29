@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Muoi_Tam.Controllers.HomeAPIController",
+    "Method": "LayCauThuTheoCauLacBo",
+    "RelativePath": "api/HomeAPI/{caulacboID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "caulacboID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Muoi_Tam.Models.Cauthu, Muoi_Tam, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
